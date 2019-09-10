@@ -1,1 +1,18 @@
-<h1>This is my Handlebars Homepage...</h1>
+<div class="jumbotron">
+    <h1 class="display-4 pb-3 font-weight-bold">{{ stock.companyName }} ({{ stock.symbol }})</h1>
+    <p><span class="font-weight-bold">Latest Price: </span>${{ stock.latestPrice }}</p>
+    <p><span class="font-weight-bold">Previous Close: </span>${{ stock.previousClose }}</p>
+    <p><span class="font-weight-bold">Percent Change: </span>${{ stock.changePercent }}</p>
+    <p><span class="font-weight-bold">Market Cap: </span>${{ stock.marketCap }}</p>
+    <p><span class="font-weight-bold">YTD Change: </span>{{ stock.ytdChange }}</p>
+    <p><span class="font-weight-bold">52wk High: </span>{{ stock.week52High }}</p>
+    <p><span class="font-weight-bold">52wk Low: </span>{{ stock.week52Low }}</p>
+</div>
+
+
+
+
+
+{{!-- {{#each stock}}
+{{@key}} | {{this}}<br />
+{{/each}} --}}
